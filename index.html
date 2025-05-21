@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aniwatch - Anime İzlə</title>
+  <meta charset="UTF-8">
+  <title>WhyDub AZE</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #111; color: #fff; margin: 0; padding: 0; }
-    header { background-color: #1f1f1f; padding: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; }
-    header img { height: 40px; }
-    header h1 { margin: 0; font-size: 2em; }
-    .anime-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
-    .anime-card { background-color: #222; border-radius: 10px; overflow: hidden; text-align: center; transition: transform 0.2s; }
-    .anime-card:hover { transform: scale(1.05); }
-    .anime-card img { width: 100%; height: auto; }
-    .anime-card a { color: #fff; text-decoration: none; display: block; padding: 10px; }
+    body { font-family: sans-serif; background: #111; color: #fff; margin: 0; padding: 0; text-align: center; }
+    header {
+      background: url('whydub_bg.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 80px 20px;
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .anime-list { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 30px; gap: 20px; }
+    .anime { background: #1e1e1e; padding: 10px; border-radius: 10px; width: 200px; }
+    .anime img { width: 100%; border-radius: 10px; }
+    footer { margin-top: 40px; font-size: 14px; color: #aaa; }
+    a { color: #00bfff; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/E2v1F3N.png" alt="Aniwatch Logo">
-    <h1>Aniwatch</h1>
+    WhyDub AZE
   </header>
-  <div class="anime-grid">
-    <div class="anime-card">
-      <a href="aot.html">
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Shingeki_no_Kyojin_manga_volume_1.jpg" alt="Attack on Titan" />
-        Attack on Titan
-      </a>
+
+  <div class="anime-list">
+    <div class="anime">
+      <a href="aot.html"><img src="https://i.imgur.com/E6hYB1h.jpeg" alt="AOT"><br>Attack on Titan</a>
     </div>
-    <div class="anime-card">
-      <a href="naruto.html">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Naruto" />
-        Naruto
-      </a>
+    <div class="anime">
+      <a href="naruto.html"><img src="https://i.imgur.com/w6H5QZB.jpeg" alt="Naruto"><br>Naruto</a>
     </div>
   </div>
+
+  <footer>
+    Yaradıcı: <a href="https://www.instagram.com/orsthed.1" target="_blank">Elmir</a>
+  </footer>
 </body>
 </html>
